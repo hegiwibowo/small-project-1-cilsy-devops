@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "ubuntu/focal64"
 
-# Database Configuration
+# Database Server
   config.vm.define "DB" do |db|
     db.vm.provider :virtualbox do |vb|
       vb.name = "DB"
@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
     
   end
 
-# Web Server Configuration
+# Webserver
 config.vm.define "Web" do |web|
   web.vm.provider :virtualbox do |vb|
     vb.name = "Web"
