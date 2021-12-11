@@ -29,7 +29,7 @@ echo "Done!!!"
 echo "======================="
 
 echo "Import Database For Social-Media"
-git clone https://github.com/ibnuzamra/sosial-media.git
+git clone https://github.com/endiwinanda/sosial-media.git
 sudo mysql -u devopscilsy -p1234567890 dbsosmed < sosial-media/dump.sql
 rm -rf sosial-media/
 echo "Done!!!"

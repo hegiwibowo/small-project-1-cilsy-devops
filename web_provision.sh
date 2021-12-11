@@ -36,16 +36,16 @@ echo "========================"
 
 # CLONE SOURCE CODE
 echo "Clone Source Code landing-page"
-git clone https://github.com/ibnuzamra/landing-page.git
+https://github.com/endiwinanda/landing-page.git
 mv landing-page/* /var/www/welcome.local/html/
 rm -rf landing-page
 echo "Done!!!"
 echo "========================"
  
 echo "Clone WordPress"
-git clone https://github.com/ibnuzamra/WordPress.git
-mv WordPress/* /var/www/iwordpress.local/html/
-rm -rf WordPress
+git clone https://github.com/endiwinanda/wordpress.git
+mv wordpress/* /var/www/iwordpress.local/html/
+rm -rf wordpress
 sudo cp /var/www/iwordpress.local/html/wp-config-sample.php /var/www/iwordpress.local/html/wp-config.php
 sudo sed -i 's/database_name_here/wordpress_db/g' /var/www/iwordpress.local/html/wp-config.php
 sudo sed -i 's/username_here/devopscilsy/g' /var/www/iwordpress.local/html/wp-config.php
@@ -55,7 +55,7 @@ echo "Done!!!"
 echo "========================"
 
 echo "Clone sosial-media"
-git clone https://github.com/ibnuzamra/sosial-media.git
+git clone https://github.com/endiwinanda/sosial-media.git
 mv sosial-media/* /var/www/isosmed.local/html/
 rm -rf sosial-media
 sed -i 's/localhost/10.10.17.11/g' /var/www/isosmed.local/html/config.php
