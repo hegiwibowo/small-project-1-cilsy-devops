@@ -1,0 +1,13 @@
+server {
+        listen 81;
+        listen [::]:81;
+        root /var/www/welcome.local/html;
+        index index.html index.htm index.nginx-debian.html;
+        
+        server_name welcome.local www.welcome.local;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+
+}
